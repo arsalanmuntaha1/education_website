@@ -3,19 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --background: ;
-  --foreground: ;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     --background: ;
     --foreground: ;
-  }
+}
+.teamcontainer {
+    column-gap: 48px;
+    row-gap: 64px;
+    margin-top: 80px;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: ;
+        --foreground: ;
+    }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    color: var(--foreground);
+    background: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
 }

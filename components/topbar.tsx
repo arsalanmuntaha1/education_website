@@ -3,7 +3,7 @@ import { Roboto } from 'next/font/google';
 import { Facebook, FacebookIcon, Instagram, Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
 
-const roboto = Roboto({
+export const roboto = Roboto({
     subsets: ['latin'],
     weight: ['400', '700'], // Specify weights you need
     style: ['normal', 'italic'], // Specify styles you need
@@ -11,7 +11,7 @@ const roboto = Roboto({
 });
 function Topbar() {
     return (
-        <div className=" pl-[62px] pr-16 h-[54px]  shadow-innerSmall">
+        <div className="bg-primary  pl-[62px] pr-16 h-[54px]  shadow-innerSmall">
             <div className="flex  justify-between pt-3 pb-3 gap-8 ">
                 <div className={`${roboto.className} flex items-center gap-4  text-sm`}>
                     <p>Phone Number: 956 742 455 678</p>
